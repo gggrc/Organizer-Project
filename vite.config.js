@@ -8,4 +8,13 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    // Tambahkan blok server ini
+    server: {
+        host: 'localhost',
+        port: 8000,
+        strictPort: true,
+        hmr: {
+            host: 'localhost',
+        },
+    },
 });
